@@ -24,6 +24,7 @@
         main {
             margin-top: 50px;
         }
+
         /* 
         #portfolio {
             background-color: rgb(237, 237, 237);
@@ -40,13 +41,13 @@
             padding-top: 30px;
         }
  */
-        #portfolio{
+        #portfolio {
             background-color: rgb(237, 237, 237);
             padding: 15px;
             margin-top: 20px;
         }
 
-        #contact{
+        #contact {
             background-color: rgb(204, 207, 208);
             padding-top: 20px;
         }
@@ -54,44 +55,6 @@
         section {
             scroll-margin-top: 40px;
         }
-
-        form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-input[type="submit"]:focus {
-  outline: none;
-}
     </style>
 </head>
 
@@ -126,7 +89,7 @@ input[type="submit"]:focus {
         <section id="about">
             <h2>About</h2>
             <div class="w3-row">
-                <div class="w3-half"> 
+                <div class="w3-half">
                     <img src="assets/img/seljalandsfoss-1751463_1280.jpg" alt="" class="imgabout w3-image">
                     <!-- <img src="assets/img/seljalandsfoss-1751463_1280.jpg" alt="" class="w3-image"> -->
                     <!-- 
@@ -136,6 +99,7 @@ input[type="submit"]:focus {
                 <div class="w3-half w3-padding ">
                     <h2>Travel around the world</h2>
                     <p>Préparez votre voyage pour l'Islande en quelques clics</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem temporibus voluptas animi esse debitis, aliquid cupiditate amet voluptatum corrupti possimus est placeat quis assumenda tempora! Mollitia dolores praesentium delectus eius?</p>
                 </div>
             </div>
             <!-- 
@@ -209,35 +173,38 @@ input[type="submit"]:focus {
         <section id="portfolio">
             <h2>Portfolio</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam earum officia iste dolor velit laborum, dolores laudantium qui nemo repudiandae illo hic ex minima quam beatae in minus dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquam earum officia iste dolor velit
+                laborum, dolores laudantium qui nemo repudiandae illo hic ex minima quam beatae in minus dolorum.
             </p>
             <div class="w3-row">
-                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third" >
-                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third" >
-                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third" >
-                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third" >
-                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third" >
-                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third" >
+                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third">
+                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third">
+                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third">
+                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third">
+                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third">
+                <img src="assets/img/iceland-2111811_1280.jpg" alt="" class=" w3-third">
             </div>
         </section>
         <!-- CONTACT -->
         <section id="contact">
             <h2>Contact</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis sint incidunt minus eligendi tenetur libero tempore quas aut necessitatibus sapiente provident odit, laboriosam optio perspiciatis ab nihil dolorum debitis?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis sint incidunt minus eligendi
+                tenetur libero tempore quas aut necessitatibus sapiente provident odit, laboriosam optio perspiciatis ab
+                nihil dolorum debitis?
             </p>
             <form>
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" required>
-              
+
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
-              
+
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" required></textarea>
-              
+
                 <input type="submit" value="Envoyer">
-              </form>
+            </form>
         </section>
     </main>
     <!-- MAIN END -->
@@ -256,7 +223,7 @@ input[type="submit"]:focus {
         }
         function homeHideNavbar() {
             var nav = document.getElementById("mobilenav")
-            if (nav.classList.contains("w3-show")){
+            if (nav.classList.contains("w3-show")) {
                 nav.classList.remove("w3-show");
             }
         }
