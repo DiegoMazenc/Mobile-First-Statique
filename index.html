@@ -19,6 +19,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <style>
         html {
@@ -92,8 +93,8 @@
             <div class="w3-row">
                 <div class="soustitre">
                     <div class="w3-display-container w3-padding ">
-                        <div class="aboutcontaint">
-                            <div class="gifplanet">
+                        <div data-aos="fade-up" class="aboutcontaint">
+                            <div  class="gifplanet">
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_nptqyaby.json"
@@ -208,8 +209,8 @@
              -->
         </section>
         <!-- PORTFOLIO -->
-        <section id="portfolio">
-            <h2 class="portfolio">Portfolio</h2>
+        <section data-aos="fade-up" id="portfolio">
+            <h2  class="portfolio">Portfolio</h2>
             <div class="portfoliocontain">
                 <div class="portfoliotexte">
                     <h3>Bienvenue sur mon Portfolio</h3>
@@ -253,23 +254,23 @@
                 </div>
                 <div class="w3-row-padding">
                     <div class="galery">
-                        <div class="galery1">
-                            <h2 class=" w3-third">Cascades</h2>
+                        <div  class="galery1">
+                            <h2 data-aos="fade-up-right" class=" w3-third">Cascades</h2>
                         </div>
                         <div class="galery2">
-                            <h2 class=" w3-third">Aurores Boréales</h2>
+                            <h2 data-aos="fade-up-right" class=" w3-third">Aurores Boréales</h2>
                         </div>
                         <div class="galery3">
-                            <h2 class=" w3-third">On the Road</h2>
+                            <h2 data-aos="fade-up-right" class=" w3-third">On the Road</h2>
                         </div>
                         <div class="galery1">
-                            <h2 class=" w3-third">Cascades</h2>
+                            <h2 data-aos="fade-up-right" class=" w3-third">Cascades</h2>
                         </div>
                         <div class="galery2">
-                            <h2 class=" w3-third">Aurores Boréales</h2>
+                            <h2 data-aos="fade-up-right" class=" w3-third">Aurores Boréales</h2>
                         </div>
                         <div class="galery3">
-                            <h2 class=" w3-third">On the Road</h2>
+                            <h2 data-aos="fade-up-right" class=" w3-third">On the Road</h2>
                         </div>
                     </div>
 
@@ -311,7 +312,11 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p><a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+                    <p><a href="mailto:contact@exemple.com">contact@exemple.com</a></p><br>
+                    <img src="https://placehold.co/50x50" alt="">
+                    <img src="https://placehold.co/50x50" alt="">
+                    <img src="https://placehold.co/50x50" alt="">
+                    <img src="https://placehold.co/50x50" alt="">
                 </div>
                 <div class="footer-section">
                     <h3>Liens</h3>
@@ -331,7 +336,10 @@
     <!-- FOOTER END -->
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         function toogleNavbar() {
             var nav = document.getElementById("mobilenav");
             nav.classList.toggle("w3-show");
@@ -344,6 +352,7 @@
             }
         }
     </script>
+
     <!-- JS -->
 </body>
 
