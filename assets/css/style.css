@@ -3,6 +3,12 @@ form {
   margin: 0 auto;
 }
 
+#desktopnav .navmargin {
+  padding: 17px;
+}
+
+
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -40,81 +46,223 @@ input[type="submit"]:focus {
   padding-bottom: 30px;
 }
 
+.gifplanet {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.aboutcontaint {
+  display: flex;
+}
+
+nav img {
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (max-width: 1700px) {
+  .aboutcontaint {
+    display: block;
+  }
+
+  .gifplanet {
+    margin: -100px 0 -100px 0;
+  }
+
+}
+
+@media screen and (min-width: 1700px) {
+  .gifplanet {
+    margin-right: -150px;
+  }
+
+  .textetravel {
+    padding: 2%;
+  }
+}
+
+
 .titre {
   background-image: url(../img/aurora-borealis-1851277_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 25%;
-  background-attachment: fixed;
+  padding: 150px 20%;
+  font-family: 'Yeseva One', cursive;
   background-position: center;
-
-
   color: rgb(221, 229, 236);
   font-weight: bold;
 }
 
 .portfolio {
-  background-image: url(../img/horses-2427513_1280.jpg);
+
+  background-image: url(../img/kirkjufell-3092048_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 25%;
-  background-attachment: fixed;
+  padding: 150px 20%;
   background-position: center;
   margin: 0;
-
   color: rgb(221, 229, 236);
   font-weight: bold;
+  font-family: 'Yeseva One', cursive;
 }
 
 
-#portfolio p {
+#portfolio {
   margin: 0;
-  padding: 50px 0;
 }
 
 .portfoliocontain {
 
   padding-bottom: 30px;
+
 }
 
-.soustitre p{
+.portfoliotexte {
+  padding: 30px 15%;
+  text-align: justify;
+
+}
+
+.portfoliotexte h3 {
+  text-align: center;
+}
+
+.soustitre p {
   margin-bottom: 30px;
+  padding: 0 15%;
+  text-align: justify;
 }
 
-.imagekifaitchier{
-  margin:50px 0;
+.imagekifaitchier {
+  margin: 50px 0;
 }
 
-.galery{
+.galery {
   position: relative;
 }
 
-.galery1 h2{
+.galery1 h2 {
   background-image: url(../img/waterfall-6473754_1280.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 400px;
-  font-weight:bolder ;
+  padding-top: 350px;
+  font-weight: bolder;
 }
 
-.galery2 h2{
+.galery2 h2 {
+  position: relative;
   background-image: url(../img/aurora-borealis-5599375_1280.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 400px;
-  font-weight:bolder ;
+  padding-top: 350px;
+
+  font-weight: bolder;
 }
 
-.galery3 h2{
+.galery3 h2 {
   background-image: url(../img/road-6175186_1280.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 400px;
-  font-weight:bolder ;
+  padding-top: 350px;
+  font-weight: bolder;
+
+}
+
+
+.galery1:hover {
+  filter: grayscale(80%);
+
+}
+
+.galery2:hover {
+  filter: grayscale(80%);
+}
+
+.galery3:hover {
+  filter: grayscale(80%);
+}
+
+@media screen and (min-width: 601px) {
+  .w3-third {
+    margin: 0;
+  }
+
+}
+
+#contact p {
+  padding: 0 15%;
+}
+
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 601px) {
+  .footer-content {
+    display: block;
+  }
+}
+
+.footer-section {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  color: #777;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.legal-section {
+  margin-top: 20px;
+  color: #777;
+  font-size: 12px;
 }
