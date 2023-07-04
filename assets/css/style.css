@@ -149,7 +149,7 @@ nav img {
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 350px;
+  padding-top: 400px;
   font-weight: bolder;
 }
 
@@ -160,7 +160,7 @@ nav img {
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 350px;
+  padding-top: 400px;
 
   font-weight: bolder;
 }
@@ -171,7 +171,7 @@ nav img {
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 350px;
+  padding-top: 400px;
   font-weight: bolder;
 
 }
@@ -182,7 +182,7 @@ nav img {
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 350px;
+  padding-top: 400px;
   font-weight: bolder;
 
 }
@@ -193,7 +193,7 @@ nav img {
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 350px;
+  padding-top: 400px;
   font-weight: bolder;
 
 }
@@ -204,7 +204,7 @@ nav img {
   background-position: center;
   height: 500px;
   color: white;
-  padding-top: 350px;
+  padding-top: 400px;
   font-weight: bolder;
 
 }
@@ -219,6 +219,18 @@ nav img {
 }
 
 .galery3:hover {
+  filter: grayscale(80%);
+}
+
+.galery4:hover {
+  filter: grayscale(80%);
+}
+
+.galery5:hover {
+  filter: grayscale(80%);
+}
+
+.galery6:hover {
   filter: grayscale(80%);
 }
 
