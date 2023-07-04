@@ -49,7 +49,6 @@
 
 
         #contact {
-            background-color: rgb(204, 207, 208);
             padding-top: 20px;
         }
 
@@ -234,10 +233,12 @@
                 </div>
                 <div class="w3-row-padding">
                     <div class="galery">
-                        <div class="galery1">
-                            <h2 data-aos="fade-up-right" class=" w3-third">Cascades</h2>
+                        <div data-aos="fade-up-right" class="galery1">                          
+                            <h2  class=" w3-third">Cascades</h2>
+
                         </div>
                         <div class="galery2">
+                            
                             <h2 data-aos="fade-up-right" class=" w3-third">Aurores Boréales</h2>
                         </div>
                         <div class="galery3">
@@ -260,13 +261,14 @@
         </section>
         <!-- CONTACT -->
         <section id="contact">
-            <h2>Contact</h2>
+            <div class="w3-card w3-margin w3-round-large w3-padding-24 w3-gray" data-aos="fade-up">
+                <h2>Contact</h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis sint incidunt minus eligendi
                 tenetur libero tempore quas aut necessitatibus sapiente provident odit, laboriosam optio perspiciatis ab
                 nihil dolorum debitis?
             </p>
-            <form>
+            <form data-aos="fade-up">
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" required>
 
@@ -278,6 +280,8 @@
 
                 <input type="submit" value="Envoyer">
             </form>
+            </div>
+
         </section>
     </main>
     <!-- MAIN END -->
