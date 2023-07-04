@@ -176,6 +176,38 @@ nav img {
 
 }
 
+.galery4 h2 {
+  background-image: url(../img/Horse.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  padding-top: 350px;
+  font-weight: bolder;
+
+}
+
+.galery5 h2 {
+  background-image: url(../img/volcano-7396466_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  padding-top: 350px;
+  font-weight: bolder;
+
+}
+
+.galery6 h2 {
+  background-image: url(../img/glacier-1868192_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  padding-top: 350px;
+  font-weight: bolder;
+
+}
 
 .galery1:hover {
   filter: grayscale(80%);
@@ -265,4 +297,20 @@ a:hover {
   margin-top: 20px;
   color: #777;
   font-size: 12px;
+}
+
+.scroll-to-top {
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 20%;
+  text-decoration: none;
 }

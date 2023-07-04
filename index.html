@@ -60,6 +60,7 @@
 </head>
 
 <body>
+    <a href="#home" id="btn-scroll" class="scroll-to-top w3-hide">↑</a>
     <!-- HEADER START -->
     <header class="w3-top w3-white">
         <nav id="desktopnav" class="w3-bar">
@@ -67,8 +68,9 @@
                 class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right ">
                 <i class="fa fa-bars fa-2x"></i>
             </a>
-            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button"><img
-                    src="assets/img/flat-2126882_640.png" alt=""></a>
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button">
+                <img src="assets/img/flat-2126882_640.png" alt="">
+            </a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small navmargin">About</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small navmargin">Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small navmargin">Contact</a>
@@ -94,7 +96,7 @@
                 <div class="soustitre">
                     <div class="w3-display-container w3-padding ">
                         <div data-aos="fade-up" class="aboutcontaint">
-                            <div  class="gifplanet">
+                            <div class="gifplanet">
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_nptqyaby.json"
@@ -210,7 +212,7 @@
         </section>
         <!-- PORTFOLIO -->
         <section data-aos="fade-up" id="portfolio">
-            <h2  class="portfolio">Portfolio</h2>
+            <h2 class="portfolio">Portfolio</h2>
             <div class="portfoliocontain">
                 <div class="portfoliotexte">
                     <h3>Bienvenue sur mon Portfolio</h3>
@@ -254,15 +256,6 @@
                 </div>
                 <div class="w3-row-padding">
                     <div class="galery">
-                        <div  class="galery1">
-                            <h2 data-aos="fade-up-right" class=" w3-third">Cascades</h2>
-                        </div>
-                        <div class="galery2">
-                            <h2 data-aos="fade-up-right" class=" w3-third">Aurores Boréales</h2>
-                        </div>
-                        <div class="galery3">
-                            <h2 data-aos="fade-up-right" class=" w3-third">On the Road</h2>
-                        </div>
                         <div class="galery1">
                             <h2 data-aos="fade-up-right" class=" w3-third">Cascades</h2>
                         </div>
@@ -271,6 +264,15 @@
                         </div>
                         <div class="galery3">
                             <h2 data-aos="fade-up-right" class=" w3-third">On the Road</h2>
+                        </div>
+                        <div class="galery4">
+                            <h2 data-aos="fade-up-right" class=" w3-third">Animaux</h2>
+                        </div>
+                        <div class="galery5">
+                            <h2 data-aos="fade-up-right" class=" w3-third">Volcans</h2>
+                        </div>
+                        <div class="galery6">
+                            <h2 data-aos="fade-up-right" class=" w3-third">Glaciers</h2>
                         </div>
                     </div>
 
@@ -309,22 +311,24 @@
                 <div class="footer-section">
                     <h3>Adresse</h3>
                     <p>123 Rue du Footer<br>Ville, Pays</p>
+                    <h3>tel</h3>
+                    <p><a href="tel:0612131415">06 12 13 14 15</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p><a href="mailto:contact@exemple.com">contact@exemple.com</a></p><br>
-                    <img src="https://placehold.co/50x50" alt="">
-                    <img src="https://placehold.co/50x50" alt="">
-                    <img src="https://placehold.co/50x50" alt="">
-                    <img src="https://placehold.co/50x50" alt="">
+                    <img src="assets/img/facebook.png" alt="">
+                    <img src="assets/img/instagram.png" alt="">
+                    <img src="assets/img/Linkedin.png" alt="">
+                    <img src="assets/img/twitter.png" alt="">
                 </div>
                 <div class="footer-section">
                     <h3>Liens</h3>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -351,6 +355,20 @@
                 nav.classList.remove("w3-show");
             }
         }
+        
+        function displayScrollToTopBtn(){
+            var btn = document.getElementById("btn-scroll");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                btn.classList.add("w3-show");
+            } else {
+                btn.classList.remove("w3-show");
+            }
+        }
+        window.addEventListener("scroll",function(){
+            displayScrollToTopBtn();
+        });
+
+
     </script>
 
     <!-- JS -->
